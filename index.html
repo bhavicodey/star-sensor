@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+ 
+  </head>
+  <ul>
+    
+  </ul> 
+  <body>
+  <div class="container">
+    <br>
+   
+    <br>
+    <div class="header">
+      <h1>Star Sensor</h1>
+     
+    </div>
+ 
+
+
+    <br>
+   
+    <br>
+   
+    <br>
+   
+    <br>
+   
+    <br>
+   
+    <p style="font-size: 30px;"> </p>
+    
+
+    <!-- actual upload which is hidden -->
+    <input type="file"  accept="image/gif, image/jpeg, image/png" name="image" id="file" onchange="loadFile(event)" style="display: none;">
+    <br>
+    <p><label for="file" style="cursor: pointer; float: left;">Upload Image</label></p>
+    <br>
+    <img id="output" style="float: left" width="200" />	
+
+
+
+  </div>
+  <br>
+  <button onclick="check();" id="login" style="float: left" class="btn btn-success">Analyze</button>
+
+  <p style="font-size: 22px;" id="name" style="float: left"> <span id="result_object_name"></span> </p>
+  <br>
+<script src="main.js"></script>
+
+  </body>
+</html>
